@@ -14,7 +14,18 @@ Verde: #4CAF50 primária
 }
 
 header {
+    background-color: #4CAF50;
     text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    transition: background-color 0.5s ease;
+}
+
+header.rolagem {
+    background-color: #4CAF50;
 }
 
 div#pic {
@@ -57,8 +68,12 @@ nav ul li a {
     text-decoration: none;
     font-size: 1.1em;
     padding: 10px;
-    background-color: #4CAF50;
-    transition: background-color 3s;
+    text-shadow: 1px 1px 2px rgb(33, 33, 33, 0.7);
+    transition: color 1s;
+}
+
+nav ul li a:hover {
+    color: #4CAF50;
 }
 
 body {
@@ -98,26 +113,38 @@ section#apa > h1 {
     font-size: 5em;
     font-weight: 700;
     text-transform: uppercase;
-    margin-top: 50px;
+    margin-top: 80px;
     margin-left: 100px;
-    margin-bottom: 10px;
+    margin-bottom: 60px;
     z-index: 2;
 }
 
 section#apa > h1 > .titulo {
     display: block;
+    text-shadow: 2px 2px 4px rgb(33, 33, 33, 0.7);
+    transition: color 0.3s ease;
+}
+
+section#apa h1 span#adventure:hover {
+    color: #E53935;
 }
 
 section#apa div#tourism {
     /*background-color: rgba(0, 0, 0, 0.5);*/
+    display: flex;
+    justify-content: space-between;
     padding: 10px;
     margin-top: 50px;
-    width: 50%;
+    width: 70%;
     z-index: 2;
 }
 
 section#apa div#tourism h2 {
-    
+    margin: 0px 100px;
+}
+
+section#apa div#tourism p {
+    text-align: justify;
 }
 
 .project {
