@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function(){
         }
 
         imagem[transicaoAtual].classList.add('ativo');
-        setInterval(proximaImagem, 3000);
+        setInterval(proximaImagem, 5000);
     }
 
     const blocoDireito = document.querySelector('#idireita');
