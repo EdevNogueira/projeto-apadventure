@@ -290,14 +290,18 @@ section#us {
     flex-direction: column;
     align-items: stretch;
     gap: 20px;
-    height: 800px;
+    height: 900px;
     text-align: justify;
+    box-shadow: none;
 }
 
 section#us div {
     width: 50%;
     margin-left: 0px;
     border-radius: 4px;
+    background-color: rgba(245, 245, 220, 0.3);
+    box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.3);
+    color: black;
 }
 
 section#us h2 {
@@ -310,17 +314,14 @@ section#us p {
 
 section#us div#who {
     display: flex;
-    
     flex-direction: column;
     align-items: stretch;
-    background-color: #E53935;
-    color: #FFF;
     padding: 0px;
+    margin-right: 0px;
 }
 
 section#us div#who h2 {
     padding: 20px;
-    color: black;
 }
 
 section#us div#who p {
@@ -328,14 +329,7 @@ section#us div#who p {
 }
 
 section#us div#why {
-    background-color: rgba(0, 0, 0, 0.7);
-    color: #FFF;
     margin-left: 50%;
-}
-
-section#us div#because {
-    background-color: #4CAF50;
-    color: #FFF;
 }
 
 section#us div.algumacoisa {
@@ -343,15 +337,26 @@ section#us div.algumacoisa {
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: none;
 }
 
 /*PARTE 04*/
 
+section#evidency {
+    height: 400px;
+}
+
+section#evidency h2 {
+    margin-bottom: 20px;
+}
+
+/*PARTE 05*/
 footer {
     background-color: #38853b;
     text-align: center;
     color: #FFF;
     padding: 10px 0px;
+    height: 300px;
 }
 
 
