@@ -15,6 +15,10 @@ Verde: #4CAF50 primária
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 header {
     text-align: center;
     position: fixed;
@@ -290,54 +294,73 @@ section#us {
     flex-direction: column;
     align-items: stretch;
     gap: 20px;
-    height: 900px;
+    height: 1000px;
     text-align: justify;
     box-shadow: none;
 }
 
-section#us div {
-    width: 50%;
-    margin-left: 0px;
+section#us div.textimage {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 20px;
+    margin: 10px 0px;
+    width: 45%;
     border-radius: 4px;
     background-color: rgba(245, 245, 220, 0.3);
     box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.3);
     color: black;
 }
 
-section#us h2 {
-    font-size: 2em;
-}
-
-section#us p {
-    margin-bottom: 10px;
-}
-
-section#us div#who {
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    padding: 0px;
-    margin-right: 0px;
-}
-
-section#us div#who h2 {
-    padding: 20px;
-}
-
-section#us div#who p {
-    padding: 10px 20px;
-}
-
 section#us div#why {
     margin-left: 50%;
 }
 
-section#us div.algumacoisa {
-    background-color: #38853b;
+section#us div.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+section#us h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+section#us p {
+    margin-bottom: 10px;
+    padding: 5px 0px;
+}
+
+section#us div.imagetext {
     display: flex;
     justify-content: center;
     align-items: center;
     box-shadow: none;
+}
+
+section#us div.imagetext img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.row:nth-child(odd) .textimage {
+    order: 1;
+}
+
+.row:nth-child(odd) .imagetext {
+    order: 2;
+}
+
+.row:nth-child(even) .textimage {
+    order: 2;
+}
+
+.row:nth-child(even) .imagetext {
+    order: 1;
 }
 
 /*PARTE 04*/
