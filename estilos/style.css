@@ -451,8 +451,14 @@ footer {
     padding: 10px 0px;
     height: 300px;
     box-shadow: 0px -1px 4px #00000094;
+<<<<<<< HEAD
     align-items: center;
     justify-content: center;
+=======
+    /* display: flex;
+    justify-content: space-between;
+    margin-right: 30px; */
+>>>>>>> e1dce2e62e16ceb978f64cd3b85d89a0af9da130
 }
 
 
@@ -469,8 +475,12 @@ footer p {
 footer#contacts {
     display: flex;
     flex-wrap: wrap;
+<<<<<<< HEAD
     justify-content: space-between;
     /* padding: 0px 50px; */
+=======
+    /* padding: 0px 50px; */
+>>>>>>> e1dce2e62e16ceb978f64cd3b85d89a0af9da130
 }
 
 footer form {
@@ -583,7 +593,6 @@ section#pescTech div#iniPesc {
 }
 
 #txtSolte p {
-    font-size: 1.1rem;
     margin-bottom: 1rem;
     line-height: 1.8;
     text-align: justify;
@@ -596,12 +605,12 @@ section#pescTech div#iniPesc {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-#txtPescai, #imgPescai, #scanPescai, .infoScan {
+.txtPescai, .imgPescai, #scanPescai, .infoScan {
     margin: 1rem;
     padding: 1rem;
 }
 
-#txtPescai h2, #scanPescai h2 {
+.txtPescai h2, #scanPescai h2 {
     font-family: 'Lora', serif;
     font-size: 2.5rem;
     margin-bottom: 1rem;
@@ -611,11 +620,50 @@ section#pescTech div#iniPesc {
     padding-bottom: 0.5rem;
 }
 
-#txtPescai p, .infoScan p {
-    font-size: 1.1rem;
+.txtPescai p, .infoScan p {
     margin-bottom: 1rem;
     line-height: 1.8;
     text-align: justify;
+}
+
+.imgPescai {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    box-shadow: 2px 2px 2px 2px rgba(33, 33, 33, 0.5);
+    border-radius: 10px;
+}
+
+.imgPescai img {
+    height: 300px;
+    width: 300px;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.linha {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 60px 0px;
+}
+
+.linha:nth-child(odd) .txtPescai {
+    order: 1;
+}
+
+.linha:nth-child(odd) .imgPescai {
+    order: 2;
+}
+
+.linha:nth-child(even) .txtPescai{
+    order: 2;
+}
+
+.linha:nth-child(even) .imgPescai{
+    order: 1;
 }
 
 .infoScan {
@@ -669,7 +717,6 @@ section#pescTech div#iniPesc {
 }
 
 #txtPiracema p {
-    font-size: 1.1rem;
     margin-bottom: 1rem;
     line-height: 1.8;
     text-align: justify;
@@ -805,7 +852,7 @@ section#triAdventure div#iniTri {
 #beneficioTri h2 {
     font-family: 'Lora', serif;
     font-size: 2.5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 50px;
     color: #028090;
     border-bottom: 2px solid #028090;
     display: inline-block;
@@ -822,7 +869,7 @@ section#triAdventure div#iniTri {
 .infoBeneficio h2 {
     font-family: 'Oswald', sans-serif;
     font-size: 2rem;
-    margin-bottom: 1rem;
+    margin-bottom: 10px;
     color: #028090;
     border-bottom: 2px solid #028090;
     display: inline-block;
@@ -845,7 +892,7 @@ section#triAdventure div#iniTri {
 #txtComunidade h2 {
     font-family: 'Lora', serif;
     font-size: 2.5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 50px;
     color: #005f73;
     border-bottom: 2px solid #005f73;
     display: inline-block;
