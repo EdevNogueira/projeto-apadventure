@@ -13,6 +13,8 @@ Verde: #4CAF50 primária
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
 }
 
 html {
@@ -20,7 +22,7 @@ html {
 }
 
 header {
-    text-align: center;
+    display: flex;
     position: fixed;
     top: 0;
     left: 0;
@@ -37,10 +39,12 @@ header.rolagem {
 }
 
 div#pic {
-    position: absolute;
+    display: flex;
+    margin: auto;
+    /* position: absolute;
     top: 40px;
     left: 50px;
-    z-index: 10;
+    z-index: 10; */
 }
 
 div#pic > a {
@@ -54,12 +58,18 @@ header img {
 }
 
 nav {
-    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+
+   /*  position: absolute;
     top: 50px;
     left: 50%;
+    margin-bottom: 50%;
     transform: translateX(-50%);
     width: 100%;
-    z-index: 2;
+    z-index: 2; */
 }
 
 nav ul {
@@ -362,16 +372,87 @@ section#us div.imagetext img {
 
 .row:nth-child(even) .imagetext {
     order: 1;
+}  
+
+/* area de depoimentos */
+
+.carrossel {
+    position: relative;
+    max-width: 800px;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.carrossel-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.depoimento {
+    min-width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.depoimento img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.depoimento .info {
+    max-width: 600px;
+}
+
+.depoimento h3 {
+    margin: 0 0 10px;
+    font-size: 1.2em;
+}
+
+.depoimento p {
+    margin: 0;
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 1.5em;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
 }
 
 /*PARTE 04*/
 footer {
+    display: flex;
     background-color: #38853b;
     text-align: center;
     color: #FFF;
     padding: 10px 0px;
     height: 300px;
     box-shadow: 0px -1px 4px #00000094;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -389,7 +470,7 @@ footer#contacts {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 0px 50px;
+    /* padding: 0px 50px; */
 }
 
 footer form {
