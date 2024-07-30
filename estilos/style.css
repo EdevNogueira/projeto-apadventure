@@ -451,14 +451,8 @@ footer {
     padding: 10px 0px;
     height: 300px;
     box-shadow: 0px -1px 4px #00000094;
-<<<<<<< HEAD
     align-items: center;
     justify-content: center;
-=======
-    /* display: flex;
-    justify-content: space-between;
-    margin-right: 30px; */
->>>>>>> e1dce2e62e16ceb978f64cd3b85d89a0af9da130
 }
 
 
@@ -475,12 +469,8 @@ footer p {
 footer#contacts {
     display: flex;
     flex-wrap: wrap;
-<<<<<<< HEAD
     justify-content: space-between;
     /* padding: 0px 50px; */
-=======
-    /* padding: 0px 50px; */
->>>>>>> e1dce2e62e16ceb978f64cd3b85d89a0af9da130
 }
 
 footer form {
