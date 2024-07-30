@@ -40,8 +40,8 @@ document.addEventListener('DOMContentLoaded', function(){
 document.addEventListener('DOMContentLoaded', () => {
     const depoimentos = [
         {
-            nome: "Ana Souza",
-            texto: "A experiência foi incrível! A equipe foi super profissional e acolhedora.",
+            nome: "Sargento Adiel (Bombeiro)",
+            texto: "Eu acho que organizar um triathlon em uma cidade que ainda não tem tradição nesse tipo de evento pode ser uma ideia fantástica. Pode revitalizar a cidade, promover um estilo de vida saudável entre os moradores e até mesmo atraindo os turistas e atletas profissionais.",
             imagem: "imagens/apa-foto-local.jpg"
         },
         {
