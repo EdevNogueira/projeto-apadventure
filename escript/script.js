@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         {
             nome: "Eva (Vendedora de Peixes)",
-            texto: "o marido gostava de caminhar lá antes, mas que depois que ficou no estado que tá, ele não vai mais por medo de se machucar. Então o Percurso dele agora costuma ser até o Outeiro do Finca. E disse também que a restauração traria vários benefícios porque é um lugar onde se pode ter contato com a natureza.",
+            texto: "O marido gostava de caminhar lá antes, mas que depois que ficou no estado que tá, ele não vai mais por medo de se machucar. Então o Percurso dele agora costuma ser até o Outeiro do Finca. E disse também que a restauração traria vários benefícios porque é um lugar onde se pode ter contato com a natureza.",
             imagem: "imagens/Imagem do WhatsApp de 2024-07-30 à(s) 10.09.27_5902c50d.jpg"
         }
     ];
