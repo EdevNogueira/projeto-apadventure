@@ -306,7 +306,7 @@ section#us {
     flex-direction: column;
     align-items: stretch;
     gap: 60px;
-    height: 1500px;
+    height: 2000px;
     text-align: justify;
     box-shadow: none;
 }
@@ -446,31 +446,40 @@ button {
 footer {
     display: flex;
     background-color: #38853b;
-    text-align: center;
     color: #FFF;
     padding: 10px 0px;
-    height: 300px;
+    height: 360px;
     box-shadow: 0px -1px 4px #00000094;
     align-items: center;
     justify-content: center;
 }
 
+footer div#contacts {
+    text-align: justify;
+    padding: 10px;
+    margin: auto;
+}
 
-footer h2 {
+footer div#contacts h3 {
     font-size: 1.5em;
-    margin-bottom: 5px;
+    margin-bottom: 20px;
 }
 
-
-footer p {
-    font-size: 1.1em;
+footer div#contacts p {
+    padding: 5px 0px;
 }
 
-footer#contacts {
+footer div#inscricoes {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    /* padding: 0px 50px; */
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+footer div#inscricoes h3 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
 }
 
 footer form {
@@ -480,9 +489,27 @@ footer form {
     margin: auto;
 }
 
-footer form input, form button {
+footer #ibutton {
+    position: relative;
+    background-color: rgba(0, 0, 0);
+    color: #fff;
+    border: none;
     padding: 10px;
-    margin: 5px 0px;
+    margin: 10px 0px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+footer #ibutton:hover {
+    background-color: #FFF;
+    color: #E53935;
+}
+
+footer form input{
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 30px;
     border: none;
     border-radius: 5px;
 }
@@ -678,6 +705,57 @@ section#pescTech div#iniPesc {
     list-style-type: disc;
     margin-left: 2rem;
     line-height: 1.8;
+}
+
+#history {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem 2rem;
+    background: linear-gradient(135deg, #ffd45a99, #ffd45a33);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#imgHistory {
+    flex: 1 1 45%;
+    margin: 1rem;
+    transition: transform 0.3s ease;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#imgHistory img {
+    width: 100%;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+#imgHistory:hover img {
+    transform: scale(1.05);
+}
+
+#txtHistory {
+    flex: 1 1 45%;
+    margin: 1rem;
+    text-align: left;
+}
+
+#txtHistory h2 {
+    font-family: 'Lora', serif;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #005f73;
+    border-bottom: 2px solid #005f73;
+    display: inline-block;
+    padding-bottom: 0.5rem;
+}
+
+#txtHistory p {
+    margin-bottom: 1rem;
+    line-height: 1.8;
+    text-align: justify;
 }
 
 #piracema {
@@ -1044,4 +1122,56 @@ section#bufaloRodeio div#iniBufalo {
 .infoCultura ul {
     list-style: disc;
     padding-left: 1.5rem;
+}
+
+#mural {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(135deg, #df6f0fb0, #df6f0f47);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#imgMural {
+    flex: 1 1 45%;
+    margin: 1rem;
+    transition: transform 0.3s ease;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#imgMural img {
+    width: 100%;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+#imgMural:hover img {
+    transform: scale(1.05);
+}
+
+.txtMural {
+    flex: 1 1 45%;
+    margin: 1rem;
+    text-align: left;
+    color: #2c190c;
+}
+
+.txtMural h2 {
+    font-family: 'Lora', serif;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #2c190c;
+    border-bottom: 2px solid #FFF;
+    display: inline-block;
+    padding-bottom: 0.5rem;
+}
+
+.txtMural p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    line-height: 1.8;
+    text-align: justify;
 }
