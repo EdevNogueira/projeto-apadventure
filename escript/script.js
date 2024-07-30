@@ -42,17 +42,17 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             nome: "Sargento Adiel (Bombeiro)",
             texto: "Eu acho que organizar um triathlon em uma cidade que ainda não tem tradição nesse tipo de evento pode ser uma ideia fantástica. Pode revitalizar a cidade, promover um estilo de vida saudável entre os moradores e até mesmo atraindo os turistas e atletas profissionais.",
-            imagem: "imagens/apa-foto-local.jpg"
+            imagem: "imagens/image.png"
         },
         {
-            nome: "Carlos Silva",
-            texto: "Excelente serviço e atendimento. Super recomendo!",
-            imagem: "apa-foto-local.jpg"
+            nome: "Raimundo  Soares (Pescador e Vendedor)",
+            texto: "A proposta de uma IA para escaneamento de peixes é bastante inovadora e promete ser extremamente útil. A ideia de identificar espécies e fornecer informações detalhadas sobre benefícios nutricionais e características dos peixes é fascinante.Embora ainda esteja no estágio conceitual, o potencial para aplicações práticas e educativas é evidente. Estou ansioso para ver essa ideia se desenvolver e se tornar uma ferramenta real e acessível!",
+            imagem: "imagens/Imagem do WhatsApp de 2024-07-30 à(s) 10.09.54_7618e509.jpg"
         },
         {
-            nome: "Maria Oliveira",
-            texto: "Adorei o resultado final. Muito satisfeito com o trabalho realizado.",
-            imagem: "apa-foto-local.jpg"
+            nome: "Eva (Vendedora de Peixes)",
+            texto: "o marido gostava de caminhar lá antes, mas que depois que ficou no estado que tá, ele não vai mais por medo de se machucar. Então o Percurso dele agora costuma ser até o Outeiro do Finca. E disse também que a restauração traria vários benefícios porque é um lugar onde se pode ter contato com a natureza.",
+            imagem: "imagens/Imagem do WhatsApp de 2024-07-30 à(s) 10.09.27_5902c50d.jpg"
         }
     ];
 

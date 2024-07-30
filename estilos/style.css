@@ -14,7 +14,7 @@ Verde: #4CAF50 primária
     padding: 0px;
     box-sizing: border-box;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 25px;
+    font-size: 22px;
 }
 
 html {
@@ -379,7 +379,7 @@ section#us div.imagetext img {
 .carrossel {
     position: relative;
     max-width: 800px;
-    margin: 20px auto;
+    margin: auto;
     overflow: hidden;
     border-radius: 8px;
 }
