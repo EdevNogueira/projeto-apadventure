@@ -74,6 +74,7 @@ nav {
 
 nav ul {
     text-align: center;
+    margin-right: 225px;
 }
 
 nav ul li {
@@ -136,15 +137,19 @@ section#apa:before {
     z-index: 1;
 }
 
-section#apa > h1 {
+section#apa > h1{
     font-family:'Oswald', sans-serif;
-    font-size: 5em;
-    font-weight: 700;
     text-transform: uppercase;
     margin-top: 80px;
     margin-left: 100px;
     margin-bottom: 60px;
     z-index: 2;
+}
+
+section#apa > h1 > span {
+    font-family: 'Oswald', sans-serif;
+    font-size: 4em;
+    font-weight: 700;
 }
 
 section#apa > h1 > .titulo {
@@ -380,6 +385,7 @@ section#us div.imagetext img {
     position: relative;
     max-width: 800px;
     margin: auto;
+    margin-bottom: 180px;
     overflow: hidden;
     border-radius: 8px;
 }
@@ -552,6 +558,7 @@ section#pescTech h1 {
 }
 
 section#pescTech h1 span {
+    font-size: 1em;
     transition: color 0.3s ease;
 }
 
@@ -848,6 +855,7 @@ section#triAdventure h1 {
 
 
 section#triAdventure h1 span {
+    font-size: 1em;
     transition: color 0.3s ease;
 }
 
@@ -1013,6 +1021,7 @@ section#bufaloRodeio h1 {
 
 
 section#bufaloRodeio h1 span {
+    font-size: 1em;
     transition: color 0.3s ease;
 }
 
@@ -1125,12 +1134,14 @@ section#bufaloRodeio div#iniBufalo {
     padding-left: 1.5rem;
 }
 
+
 #mural {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    background: linear-gradient(135deg, #df6f0fb0, #df6f0f47);
+    padding: 4rem 2rem;
+    background: linear-gradient(135deg, #df6f0f66, #df6f0f9c);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -1153,14 +1164,13 @@ section#bufaloRodeio div#iniBufalo {
     transform: scale(1.05);
 }
 
-.txtMural {
+#txtMural {
     flex: 1 1 45%;
     margin: 1rem;
     text-align: left;
-    color: #2c190c;
 }
 
-.txtMural h2 {
+#txtMural h2 {
     font-family: 'Lora', serif;
     font-size: 2.5rem;
     margin-bottom: 1rem;
@@ -1170,8 +1180,7 @@ section#bufaloRodeio div#iniBufalo {
     padding-bottom: 0.5rem;
 }
 
-.txtMural p {
-    font-size: 1.1rem;
+#txtMural p {
     margin-bottom: 1rem;
     line-height: 1.8;
     text-align: justify;
