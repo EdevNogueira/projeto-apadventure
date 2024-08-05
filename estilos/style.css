@@ -173,6 +173,7 @@ section#apa div#tourism {
 
 section#apa div#tourism h2 {
     margin: 0px 100px;
+    font-size: 1.4em;
 }
 
 section#apa div#tourism p {
@@ -183,6 +184,7 @@ section#apa div#tourism p {
 section#apa strong {
     color: #FFF;
     text-shadow: 0px 0px 2px rgb(33, 33, 33);
+    font-size: 1.1em;
 }
 
 .project {
@@ -206,6 +208,7 @@ section#links {
     background-color: #4d784f;
     color: #FFF;
     padding: 30px 60px;
+    margin-bottom: 200px;
     height: 85vh;
     display: flex;
     flex-direction: column-reverse;
@@ -330,6 +333,7 @@ section#us div.textimage {
 
 section#us div#why {
     margin-bottom: 0px;
+    color: #FFF;
 }
 
 section#us div.row {
@@ -337,6 +341,10 @@ section#us div.row {
     align-items: center;
     justify-content: space-between;
     margin: 60px 0px;
+}
+
+section#us div#greenRow {
+    background-color: #4CAF50;
 }
 
 section#us h2 {
