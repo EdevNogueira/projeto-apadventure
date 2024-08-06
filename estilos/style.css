@@ -242,7 +242,7 @@ section#links p {
 
 section#links div.eventoImagem{
     position: absolute;
-    top: 45%;
+    top: 40%;
     left: 40%;
     transform: translateY(-50%);
     background-image: url('../imagens/apa-foto-barco.jpg');
