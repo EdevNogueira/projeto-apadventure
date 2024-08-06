@@ -187,12 +187,6 @@ section#apa strong {
     font-size: 1.1em;
 }
 
-.project {
-    width: 80%;
-    margin: 0px auto;
-    padding: 20px;
-}
-
 .feature {
     padding: 20px;
     /* margin: 100px 0px;
@@ -209,13 +203,13 @@ section#links {
     color: #FFF;
     padding: 30px 60px;
     margin-bottom: 200px;
-    height: 85vh;
+    height: 90vh;
     display: flex;
     flex-direction: column-reverse;
     flex-wrap: wrap;
     align-content: center;
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-start;
     text-align: center;
     border-top: 3px solid rgba(0, 0, 0, 0.5);
     box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.308);
@@ -242,40 +236,37 @@ section#links p {
     text-align: justify;
     font-weight: bold;
     margin-bottom: 20px;
+    padding: 20px;
 }
 
 section#links div.eventoImagem{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: #FFF;
-    width: 350px;
-    height: 250px;
+    background-image: url('../imagens/apa-foto-barco.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; 
+    width: 600px;
+    height: 450px;
     border-radius: 4px;
     z-index: 2;
 }
 
-section#links div.eventoImagem img {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    max-width: 100%;
-    max-height: 100%;
-    height: 250px;
-    border-radius: 4px;
-    object-fit: cover;
-    transition: opacity 1s ease-in-out;
-    opacity: 0;
+.imgEvento {
+    width: 600px; 
+    height: 450px; 
+    border-radius: 4px; 
+    opacity: 0; 
+    transition: opacity 0.5s ease-in-out; 
 }
 
-section#links div.eventoImagem img.ativo {
+.imgEvento.show {
     opacity: 1;
 }
 
-section#links div#iesquerda {
-    left: 0;
-    margin-left: 30px;
-}
+/* section#links div.eventoImagem img.ativo {
+    opacity: 1;
+} */
 
 section#links div#idireita {
     right: 0;
@@ -315,7 +306,7 @@ section#us {
     flex-direction: column;
     align-items: stretch;
     gap: 60px;
-    height: 2000px;
+    height: 2150px;
     text-align: justify;
     box-shadow: none;
 }
@@ -345,6 +336,10 @@ section#us div.row {
 
 section#us div#greenRow {
     background-color: #388E3C;
+}
+
+section#us div#greenRow .imagetext {
+    margin-left: 15px;
 }
 
 section#us h2 {

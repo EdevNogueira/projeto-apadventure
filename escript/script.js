@@ -1,4 +1,4 @@
-document.addEventListener('scroll', function(){
+document.addEventListener('scroll', () => {
     const cabecalho = document.querySelector('header');
     const posicaoScroll = window.scrollY || document.documentElement.scrollTop;
     if (posicaoScroll > 50) {
@@ -8,7 +8,43 @@ document.addEventListener('scroll', function(){
     }
 });
 
-document.addEventListener('DOMContentLoaded', function(){
+document.addEventListener('DOMContentLoaded', () => {
+    const links = document.querySelectorAll('.eventoBotao a');
+    const imagemDiv = document.querySelector('.eventoImagem');
+
+    const imagens = {
+        'pesctech.html': 'imagens/foto-pescador.jpg',
+        'triadventure.html': 'imagens/foto-triatlo.jpg',
+        'bufalorodeio.html': 'imagens/foto-bufalo.jpg'
+    };
+
+    links.forEach(link => {
+        link.addEventListener('mouseover', () => {
+            const hrefimg = imagens[link.getAttribute('href')];
+            imagemDiv.innerHTML = `<img src="${hrefimg}" class="imgEvento">`
+
+            setTimeout(() => {
+                const img = imagemDiv.querySelector('img');
+                img.classList.add('show');
+            }, 10);
+        });
+
+        link.addEventListener('mouseout', () => {
+            const img = imagemDiv.querySelector('img');
+            if (img) {
+                img.classList.remove('show');
+                
+                img.addEventListener('transitionend', () => {
+                    if (!img.classList.contains('show')) {
+                        imagemDiv.innerHTML = '';
+                    }
+                }, { once: true });
+            }
+        });
+    });
+});
+
+/* document.addEventListener('DOMContentLoaded', () => {
     function imagemTransicao(bloco){
         const imagem = bloco.querySelectorAll('img');
         let transicaoAtual = 0;
@@ -24,13 +60,10 @@ document.addEventListener('DOMContentLoaded', function(){
     }
 
     const blocoDireito = document.querySelector('#idireita');
-    const blocoEsquerdo = document.querySelector('#iesquerda');
 
     imagemTransicao(blocoDireito);
-    imagemTransicao(blocoEsquerdo);
     
-});
-
+}); */
 
 
 
@@ -46,7 +79,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         {
             nome: "Raimundo  Soares (Pescador e Vendedor)",
-            texto: "A proposta de uma IA para escaneamento de peixes é bastante inovadora e promete ser extremamente útil. A ideia de identificar espécies e fornecer informações detalhadas sobre benefícios nutricionais e características dos peixes é fascinante.Embora ainda esteja no estágio conceitual, o potencial para aplicações práticas e educativas é evidente. Estou ansioso para ver essa ideia se desenvolver e se tornar uma ferramenta real e acessível!",
+            texto: "A proposta de uma IA para escaneamento de peixes é bastante inovadora e promete ser extremamente útil. A ideia de identificar espécies e fornecer informações detalhadas sobre benefícios nutricionais e características dos peixes é fascinante. Embora ainda esteja no estágio conceitual, o potencial para aplicações práticas e educativas é evidente. Estou ansioso para ver essa ideia se desenvolver e se tornar uma ferramenta real e acessível!",
             imagem: "imagens/Imagem do WhatsApp de 2024-07-30 à(s) 10.09.54_7618e509.jpg"
         },
         {
