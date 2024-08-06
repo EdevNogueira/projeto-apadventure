@@ -208,7 +208,7 @@ section#links {
     flex-direction: column-reverse;
     flex-wrap: wrap;
     align-content: center;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: flex-start;
     text-align: center;
     border-top: 3px solid rgba(0, 0, 0, 0.5);
@@ -232,29 +232,31 @@ section#links div#acess {
 }
 
 section#links p {
-    width: 50%;
+    width: 45%;
     text-align: justify;
     font-weight: bold;
     margin-bottom: 20px;
     padding: 20px;
+    margin-left: 720px;
 }
 
 section#links div.eventoImagem{
     position: absolute;
-    top: 50%;
+    top: 45%;
+    left: 40%;
     transform: translateY(-50%);
     background-image: url('../imagens/apa-foto-barco.jpg');
     background-repeat: no-repeat;
     background-size: cover; 
-    width: 600px;
-    height: 450px;
+    width: 900px;
+    height: 600px;
     border-radius: 4px;
     z-index: 2;
+    
 }
-
 .imgEvento {
-    width: 600px; 
-    height: 450px; 
+    width: 900px; 
+    height: 600px; 
     border-radius: 4px; 
     opacity: 0; 
     transition: opacity 0.5s ease-in-out; 
@@ -264,19 +266,15 @@ section#links div.eventoImagem{
     opacity: 1;
 }
 
-/* section#links div.eventoImagem img.ativo {
-    opacity: 1;
-} */
-
 section#links div#idireita {
-    right: 0;
     margin-right: 30px;
 }
 
 section#links div.eventoBotao {
     display: flex;
     flex-direction: column;
-    margin-top: 50px;
+    margin: auto 0px;
+    margin-left: 100px;
     z-index: 2;
 }
 
@@ -285,7 +283,7 @@ section#links a {
     text-decoration: none;
     width: 200px;
     background-color: #E53935;
-    padding: 10px 20px;
+    padding: 25px 20px;
     margin: 15px;
     border-radius: 5px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
